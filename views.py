@@ -33,3 +33,5 @@ def register(request):
 def index(request):
     if request.method == 'GET':
         return render(request, 'index.html')
+    else:
+        return HttpResponse('查了个寂寞')
